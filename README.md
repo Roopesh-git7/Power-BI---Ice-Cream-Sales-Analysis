@@ -1,56 +1,135 @@
-# 🍦 Ice Cream Sales Analysis (Power BI Dashboard)
+# 🍦 Ice Cream Sales Analysis – Power BI Dashboard
 
-## 🧠 Overview
-This Power BI project — **“Ice Cream Sales Analysis”** — is an interactive dashboard designed to analyze sales performance across multiple ice cream flavors, locations, and time periods.  
-It helps understand customer preferences, weather impact, and seasonal trends influencing ice cream sales.
-
----
-
-## 🎯 Objectives
-- Track **total sales, profit, and quantity sold** by flavor, region, and date.  
-- Identify **top-performing flavors** and **underperforming locations**.  
-- Measure the effect of **temperature and weather** on sales.  
-- Monitor **monthly and seasonal trends** to forecast demand.  
-- Provide insights to improve **marketing and inventory decisions**.
+A comprehensive Power BI dashboard built to analyze Ice Cream sales trends, revenue patterns, seasonal effects, and product performance.  
+The project provides clear insights into how temperature, flavors, locations, and customer behavior influence total sales.
 
 ---
 
-## 🧩 Key Insights from Dashboard
-- 📈 **Total Sales:** ₹124.8K  
-- 🍨 **Total Quantity Sold:** 6.2K units  
-- 💰 **Total Profit:** ₹22.6K  
-- 🏙️ **Top Region:** South India  
-- 🔥 **Top Flavor:** Chocolate (highest demand during summer months)  
-- 🌦️ **Sales Trend:** Strong correlation between high temperature and high sales volume.
+## 🎯 Project Objective
+The goal of this project is to understand the major factors influencing ice cream sales and provide data-driven insights that help businesses:
+
+- Identify high-performing flavors  
+- Understand seasonal demand patterns  
+- Analyze sales trends based on temperature  
+- Identify top revenue-generating regions  
+- Improve forecasting and supply planning  
+
+This dashboard serves as a complete analytical tool for ice cream shop owners, distributors, and decision-makers.
 
 ---
 
-## 📊 Visuals & Components
-| Visual | Description |
-|--------|--------------|
-| **KPI Cards** | Display key metrics – Sales, Profit, and Quantity Sold. |
-| **Line Chart** | Shows *Monthly Sales Trend* with clear summer spikes. |
-| **Bar Chart** | Represents *Sales by Flavor* to identify customer favorites. |
-| **Pie Chart** | Breaks down *Sales by Region* for regional performance. |
-| **Scatter Plot (Optional)** | Compares *Temperature vs Sales* to highlight weather influence. |
-| **Slicers** | Enable filtering by Month, Flavor, Region, and Year for dynamic insights. |
+## 📊 Key Insights
+Some important findings from the analysis include:
+
+- **Sales increase significantly as temperature rises**, showing a strong positive correlation.  
+- **Certain flavors (like Vanilla & Chocolate)** contribute the highest portion of sales.  
+- **Weekends show higher sales**, indicating customer buying behavior.  
+- **Summer months outperform winter months** in both volume and revenue.  
+- Specific regions or stores consistently achieve higher performance due to footfall or climate advantages.  
+- Discounts and promotional offers increase sales but may reduce profit margin.
 
 ---
 
-## 🛠️ Tools & Techniques Used
-| Tool / Concept | Purpose |
-|----------------|----------|
-| **Power BI Desktop** | Data visualization and dashboard design |
-| **Power Query Editor** | Data cleaning and transformation |
-| **DAX (Data Analysis Expressions)** | Custom measures for profit %, sales growth, etc. |
-| **Interactive Slicers** | Enable cross-filtering and dynamic insights |
-| **Data Source:** Excel dataset containing Ice Cream sales records |
+## 📁 Dataset Overview
+The dataset contains typical Ice Cream sales attributes:
+
+### **Sales Table**
+- Date  
+- Temperature (°C)  
+- Flavors  
+- Quantity Sold  
+- Revenue  
+- City / Region  
+- Day of Week  
+- Promotion Applied (Yes/No)  
+
+### **Additional Dimensions**
+(If included in your PBIX)
+- Calendar Table  
+- Weather Table  
+- Store Details  
 
 ---
 
-## 📈 Business Insights
-- **Chocolate** and **Vanilla** are the top-selling flavors contributing over 55% of sales.  
-- **Summer months (April–June)** show peak sales activity due to higher demand.  
-- **Profit margins** are highest in premium flavors like *Strawberry Deluxe*.  
-- **Weather conditions** (especially temperature) have a direct positive impact on sales.  
-- **North and South regions** generate consistent year-round revenue.
+## 🧠 Data Model (Star Schema)
+A clean and efficient star schema is used for this project:
+
+**Fact Table:**
+- Sales
+
+**Dimension Tables:**
+- Calendar (Date Dimension)
+- Flavors
+- Region / City
+- Promotion
+- Weather / Temperature Data
+
+This structure supports better filtering, drilling down, and time-based analysis.
+
+---
+
+## 🧮 Key Measures (DAX)
+Some of the essential DAX measures used:
+
+- **Total Sales**  
+- **Total Revenue**  
+- **Average Temperature**  
+- **Total Quantity Sold**  
+- **Revenue by Flavor**  
+- **Sales by Temperature Bucket**  
+- **Daily/Monthly/Seasonal Sales Trends**  
+- **Top Flavor / Bottom Flavor Analysis**  
+- **Promotion Efficiency Metrics**  
+
+---
+
+## 📊 Dashboard Features
+
+### 🟦 **Overview Page**
+- Total Revenue  
+- Total Quantity Sold  
+- Avg. Temperature  
+- Sales Correlation with Temperature  
+- Yearly / Monthly Sales Trends  
+
+### 🟩 **Flavor Performance**
+- Best-selling flavors  
+- Revenue contribution by flavor  
+- Profitability comparison  
+- Flavor ranking visual  
+
+### 🟧 **Seasonal & Monthly Trends**
+- Summer vs Winter performance  
+- Peak sales months  
+- Weekend vs Weekday patterns  
+
+### 🟪 **Geographical Insights**
+- City / Region-wise sales  
+- Top-performing store locations  
+- Temperature vs Sales by region  
+
+### 🟫 **Promotion Impact Analysis**
+- Effect of discounts on sales  
+- Promo vs Non-promo revenue  
+- Lost margin due to discounts  
+
+---
+
+## 🛠️ Tools Used
+- **Power BI Desktop**  
+- **Excel / CSV** (sales + weather data)  
+- **Power Query** (data cleaning & transformation)  
+- **DAX** (measures & KPIs)  
+- **Star Schema Modeling**
+
+---
+
+## 📌 Conclusion
+This Ice Cream Sales Dashboard provides a powerful analytical perspective into how weather, flavor preference, and seasonal patterns affect sales.  
+The insights help businesses plan inventory, optimize flavors, schedule promotions, and make smarter business decisions based on real data.
+
+---
+
+## 👤 Author
+**Roopesh**  
+Power BI | Data Analytics | Business Intelligence  
